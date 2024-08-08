@@ -1,0 +1,17 @@
+# Configuration file for alacritty terminal
+
+# terminal themes import
+import = [
+  "~/.config/alacritty/catppuccin-mocha.toml"
+]
+
+# [shell]
+# program = ""
+# args = []
+
+[font]
+normal = { family = "ComicShannsMono", style = "Regular"}
+bold = { family = "Hack", style = "Bold"}
+italic = { family = "CaskaydiaMono", style = "Italic"}
+size = 14
+
