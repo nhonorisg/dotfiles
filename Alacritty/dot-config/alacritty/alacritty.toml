@@ -10,8 +10,8 @@ import = [
 # args = []
 
 [font]
-normal = { family = "ComicShannsMono", style = "Regular"}
-bold = { family = "Hack", style = "Bold"}
-italic = { family = "CaskaydiaMono", style = "Italic"}
+normal = { family = "ComicShannsMono Nerd Font", style = "Regular"}
+bold = { family = "Hack Nerd Font", style = "Bold"}
+italic = { family = "CaskaydiaMono Nerd Font", style = "Italic"}
 size = 14
 
