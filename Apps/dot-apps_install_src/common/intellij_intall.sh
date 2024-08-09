@@ -7,9 +7,6 @@ IDE_ZIP_FILE="ideaIC-2024.1.4.tar.gz"
 IDE_SIG="ideaIC-2024.1.4.tar.gz.sha256"
 OPT_DIR="/opt/"
 
-# Packages installation (curl and sha256) if not installed.
-sudo apt install curl coreutils -y
-
 #Changing the directory in order to perfom all action in downloads folder.
 cd ${DOWNLOADS}
 
