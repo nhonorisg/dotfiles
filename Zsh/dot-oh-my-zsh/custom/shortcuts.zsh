@@ -11,3 +11,6 @@ new_ex_file() {
 # file creation aliases
 alias t='touch' 
 alias texfl='new_ex_file'
+alias stowd='stow --dotfiles'
+alias nv='nvim'
+alias lg='lazygit'
