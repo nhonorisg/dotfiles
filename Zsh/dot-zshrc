@@ -89,6 +89,9 @@ path+=("$HOME/.cargo/bin")
 export EDITOR='nvim'
 export PAGER='less'
 
+# zoxide initialization
+eval "$(zoxide init --cmd cd zsh)"
+
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
@@ -105,8 +108,3 @@ export PAGER='less'
 # the $ZSH_CUSTOM folder, with .zsh extension. Examples:
 # - $ZSH_CUSTOM/aliases.zsh
 # - $ZSH_CUSTOM/macos.zsh
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
