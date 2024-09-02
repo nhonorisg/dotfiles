@@ -24,6 +24,7 @@ stow
 tree
 unzip
 virtualbox-guest-utils
+xclip
 xf86-video-vesa
 xorg-bdftopcf
 xorg-docs
