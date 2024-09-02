@@ -219,3 +219,7 @@ client.focused_inactive    $crust          $crust      $surface2     $blue      
 client.urgent              $crust          $green      $crust        $blue        $crust
 client.background          $crust
 # client.placeholder
+
+# gaps 
+gaps inner 5px
+smart_gaps inverse_outer
