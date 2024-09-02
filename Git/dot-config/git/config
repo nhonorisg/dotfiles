@@ -1,0 +1,9 @@
+[core]
+  editor = nvim
+  
+[init]
+  defaultBranch=trunk
+
+[user]
+  name = Honoris Ndereyimana
+  email = nhonorisgratias@gmail.com
