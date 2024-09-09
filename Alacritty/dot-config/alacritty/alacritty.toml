@@ -13,5 +13,5 @@ import = [
 normal = { family = "ComicShannsMono Nerd Font", style = "Regular"}
 bold = { family = "Hack Nerd Font", style = "Bold"}
 italic = { family = "CaskaydiaMono Nerd Font", style = "Italic"}
-size = 14
+size = 13
 
