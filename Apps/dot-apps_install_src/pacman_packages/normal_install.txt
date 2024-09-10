@@ -1,6 +1,9 @@
 alacritty
 base
 base-devel
+bluez
+discord
+efibootmgr
 feh
 firefox
 fzf
@@ -8,10 +11,15 @@ git
 grub
 hwinfo
 i3-wm
+i3lock
+imagemagick
+intel-ucode
 jdk17-openjdk
 lazygit
 linux-firmware
 linux-zen
+lvm2
+maven
 neovim
 networkmanager
 obsidian
@@ -19,11 +27,11 @@ openssh
 picom
 polybar
 rofi
+scrot
 sddm
 stow
 tree
 unzip
-virtualbox-guest-utils
 xclip
 xf86-video-vesa
 xorg-bdftopcf
@@ -76,3 +84,9 @@ xorg-xwud
 yazi
 zoxide
 zsh
+bluetui 0.5.1-1
+bluetui-debug 0.5.1-1
+brave-bin 1:1.69.162-1
+rstudio-desktop 2024.04.2.764-2
+yay 12.3.5-1
+yay-debug 12.3.5-1
