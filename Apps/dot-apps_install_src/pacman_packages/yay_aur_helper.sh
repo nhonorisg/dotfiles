@@ -9,6 +9,7 @@ yay -Syu --devel
 yay -Y --devel --save
 
 if [ $? -eq 0 ]; then
-  rm -rf ./yay
+  cd ..
+  rm -rf yay
 fi
 
