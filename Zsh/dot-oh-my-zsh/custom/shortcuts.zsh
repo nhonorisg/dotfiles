@@ -33,4 +33,4 @@ alias wfnls='nmcli d w'
 alias wfhp='nmcli d w hotspot ifname wlp0s20f3 ssid M2-ice-ld password ELnP1RX3PW'
 
 # Generating 10 random character
-alias grc="cat /dev/urandom | LC_ALL=C tr -dc 'a-zA-Z0-9' | fold -w 10 | head -n 1"
+alias grc="cat /dev/urandom | LC_ALL=C tr -dc 'a-zA-Z0-9' | fold -w 15 | head -n 1"

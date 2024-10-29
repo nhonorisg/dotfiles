@@ -41,7 +41,7 @@ ZSH_THEME="robbyrussell"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # You can also set it to another string to have that shown instead of the default red dots.
@@ -88,6 +88,12 @@ path+=("$HOME/.cargo/bin")
 
 export EDITOR='nvim'
 export PAGER='less'
+
+# docker socket
+# export DOCKER_HOST=unix://$XDG_RUNTIME_DIR/docker.sock
+
+# Kube configuration
+# export KUBECONFIG=/etc/kubernetes/admin.conf
 
 # zoxide initialization
 eval "$(zoxide init --cmd cd zsh)"
