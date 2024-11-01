@@ -5,8 +5,8 @@
 
 [font]
 normal = { family = "ComicShannsMono Nerd Font", style = "Regular"}
-# bold = { family = "Hack Nerd Font", style = "Bold"}
-# italic = { family = "CaskaydiaMono Nerd Font", style = "Italic"}
+bold = { family = "Hack Nerd Font", style = "Bold"}
+italic = { family = "ComicShannsMono Nerd Font", style = "Italic"}
 size = 13
 
 [general]
