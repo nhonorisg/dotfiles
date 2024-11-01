@@ -12,7 +12,7 @@ set $mod Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:MesloLGM Nerd Font Mono 10
+font pango:JetbrainsMono Nerd Font Mono 10
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -198,8 +198,9 @@ set $super Mod4
 # Assigning apps to workspaces 
 assign [class="Alacritty"]     $ws1 
 assign [class="Brave-browser"] $ws2
-assign [class="discord"]       $ws3
+assign [class="Code"]          $ws3
 assign [class="obsidian"]      $ws4
+assign [class="discord"]       $ws5
 
 # Autostart apps 
 exec --no-startup-id alacritty
@@ -246,11 +247,12 @@ set $text     "#cdd6f4"
 set $surface2 "#585b70"
 set $surface1 "#45475a"
 set $green    "#a6e3a1"
+set $peach    "#fab387"
 
-# class                    border          bgroung     text          indicator    child_border
+# class                    border          bg color    text          indicator    child_border
 client.focused             $lavender       $crust      $text         $blue        $surface1
 client.unfocused           $crust          $crust      $surface1     $blue        $crust
 client.focused_inactive    $crust          $crust      $surface2     $blue        $crust
-client.urgent              $crust          $green      $crust        $blue        $crust
+client.urgent              $crust          $peach      $crust        $blue        $crust
 client.background          $crust
 
