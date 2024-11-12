@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-rofi -show power-menu -modi "power-menu:~/.local/bin/rofi-power-menu --choices=logout/reboot/shutdown --confirm=''"
+rofi -show power-menu -modi "power-menu:~/.local/bin/rofi-power-menu --choices=reboot/shutdown --confirm=''"
 
