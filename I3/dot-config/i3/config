@@ -222,9 +222,12 @@ smart_gaps inverse_outer
 # Keyboard layout switcher.
 # bindsym $super+space exec setxkmap -layout fr  
 # bindsym $super+Shift+space exec setxkmap -layout us
-#
+
 # Screen lock
 bindsym $super+l exec $HOME/.config/i3/scripts/blur_lock
+
+# Screenshot
+bindsym $super+s exec flameshot gui
 
 # Lauching polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh 
@@ -259,4 +262,3 @@ client.unfocused           $crust          $crust      $surface1     $blue      
 client.focused_inactive    $crust          $crust      $surface2     $blue        $crust
 client.urgent              $crust          $peach      $crust        $blue        $crust
 client.background          $crust
-
