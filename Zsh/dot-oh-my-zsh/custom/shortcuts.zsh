@@ -3,13 +3,14 @@
 #
 # Author: Honoris Ndereyimana
 
+# file creation aliases
+alias t='touch' 
+
 # Creating new file with executable permissions.
 new_ex_file() {
   touch "$1" && chmod +x "$1";
 }
 
-# file creation aliases
-alias t='touch' 
 alias texfl='new_ex_file'
 
 alias lc='ls -a'
@@ -34,3 +35,21 @@ alias wfhp='nmcli d w hotspot ifname wlp0s20f3 ssid M2-ice-ld password ELnP1RX3P
 
 # Generating 10 random character
 alias grc="cat /dev/urandom | LC_ALL=C tr -dc 'a-zA-Z0-9' | fold -w 15 | head -n 1"
+
+
+# Sys upgrade 
+alias u='sudo pacman -Syu --color always --noconfirm'
+
+# package install
+pkgi() {
+    sudo pacman -S "$@" --needed
+}
+
+alias i='pkgi'
+
+# Searching for a package
+spkg() {
+    pacman -Ss "$1"
+}
+
+alias s='spkg'
