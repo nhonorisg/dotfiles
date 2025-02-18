@@ -206,8 +206,8 @@ assign [class="Code"]          $ws3
 assign [class="obsidian"]      $ws4
 assign [class="discord"]       $ws5
 
-# placing workspace 6 on another display
-# bindsym $mod+p move workspace to output right 
+# Moving the current workspace on another monitor
+bindsym $mod+p move workspace to output right
 
 # Autostart apps 
 exec --no-startup-id alacritty

@@ -36,6 +36,8 @@ alias wfhp='nmcli d w hotspot ifname wlp0s20f3 ssid M2-ice-ld password ELnP1RX3P
 # Generating 10 random character
 alias grc="cat /dev/urandom | LC_ALL=C tr -dc 'a-zA-Z0-9' | fold -w 15 | head -n 1"
 
+# List connected monitors
+alias lcm='xrandr -q | grep " connected" | cut -d " " -f1 | paste -sd " "'
 
 # Sys upgrade 
 alias u='sudo pacman -Syu --color always --noconfirm'
@@ -53,3 +55,12 @@ spkg() {
 }
 
 alias s='spkg'
+
+# Place monitor on the right side of the main monitor
+# N.B: ${args[2]} and ${args[1]}
+am() {
+    args=("$@")
+    xrandr --output ${args[2]} --auto --right-of ${args[1]} 
+}
+
+alias p='am'
