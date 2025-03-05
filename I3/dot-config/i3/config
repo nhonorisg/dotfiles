@@ -248,6 +248,10 @@ bindsym $super+v exec clipcat-menu
 # usb devices automouting utility
 exec_always --no-startup-id udiskie
 
+# Changing keyboard layout
+bindsym Shift+space exec setxkbmap -layout fr
+bindsym $super+space exec setxkbmap -layout us
+
 # Window color configuration
 # Catppuccin color palette
 set $crust    "#11111b"
