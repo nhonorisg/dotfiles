@@ -193,6 +193,11 @@ bindsym $mod+r mode "resize"
 # ----------------------------------------------
 # My custom configuration starts from here
 #-----------------------------------------------
+
+# default tiling layout 
+workspace_layout tabbed
+
+# win key variable
 set $super Mod4
 
 # Brightness adjust
@@ -251,6 +256,9 @@ exec_always --no-startup-id udiskie
 # Changing keyboard layout
 bindsym Shift+space exec setxkbmap -layout fr
 bindsym $super+space exec setxkbmap -layout us
+
+# Displaying wifi list
+bindsym $super+i exec $HOME/.local/bin/wifi
 
 # Window color configuration
 # Catppuccin color palette
