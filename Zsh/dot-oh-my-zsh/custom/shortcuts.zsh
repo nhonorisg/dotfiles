@@ -7,11 +7,11 @@
 alias t='touch' 
 
 # Creating new file with executable permissions.
-new_ex_file() {
+_new_exec_file() {
   touch "$1" && chmod +x "$1";
 }
 
-alias texfl='new_ex_file'
+alias texfl='_new_exec_file'
 
 alias lc='ls -a'
 alias q='exit'
@@ -43,24 +43,27 @@ alias lcm='xrandr -q | grep " connected" | cut -d " " -f1 | paste -sd " "'
 alias u='sudo pacman -Syu --color always --noconfirm'
 
 # package install
-pkgi() {
+_install_pkg() {
     sudo pacman -S "$@" --needed
 }
 
-alias i='pkgi'
+alias i='_install_pkg'
 
 # Searching for a package
-spkg() {
+_search_pkg() {
     pacman -Ss "$1"
 }
 
-alias s='spkg'
+alias s='_search_pkg'
 
-# Place monitor on the right side of the main monitor
-# N.B: ${args[2]} and ${args[1]}
-am() {
+# Placing the second monitor on the right side of the main monitor
+# N.B: ${args[2]}: HDMI or VGA detected monitor; ${args[1]}: main monitor.
+_position_monitors() {
     args=("$@")
     xrandr --output ${args[2]} --auto --right-of ${args[1]} 
 }
 
-alias p='am'
+alias p='_position_monitors'
+
+# Stop screen mirroring
+alias sm='xrandr --output HDMI-1 --off'
