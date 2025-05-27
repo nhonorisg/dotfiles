@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+
+# Heavily inspired by https://haluk.github.io/posts-output/2020-10-19-linux/
+# Found here: https://gist.github.com/BollaBerg/7a3fc9744d5bf6eb16f8aab5928df755
+# Modified by Honoris Ndereyimana - 84547353+nhonorisg@users.noreply.github.com
+
+# Replace <IDENTITY> with student identity (i.e. <USERNAME>@ntnu.no)
+# Replace <PASSWORD> with user password
+
+if [ $# -ne 2 ]; then
+    echo "Error: Wrong number of arguments... \n"
+    echo "Usage: connect-eduroam username password"
+    exit 1
+fi
+
+IFNAME=$(nmcli --get-values GENERAL.DEVICE,GENERAL.TYPE device show | sed '/^wifi$/!{h;d;};x')
+IDENTITY=$1
+PASSWORD=$2
+
+nmcli con add \
+  type wifi \
+  ifname $IFNAME \
+  con-name eduroam \
+  ssid eduroam \
+  ipv4.method auto \
+  802-1x.eap peap \
+  802-1x.phase2-auth mschapv2 \
+  802-1x.identity $IDENTITY \
+  802-1x.password $PASSWORD \
+  wifi-sec.key-mgmt wpa-eap
